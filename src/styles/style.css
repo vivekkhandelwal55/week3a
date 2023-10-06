@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  --title-font-size:50px
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.template, .container{
+  width: 600px;
+}
+
+.template {
+  position: relative;
+}
+
+.container-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: black;
+}
+
+.title-text {
+  font-size: var(--title-font-size);
+}
+
+/* container */
+.input-col {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 80% 20%;
+  margin-top: 10px;
+}
+
+.text-area,.button-input{
+  border-radius: 12px;
+}
+
+.text-area {
+  position: relative;
+  height: 56px;
+  border: 1px solid #BDBDBD;
+  padding: 2px 0 0 12px;
+}
+
+
+.button-input {
+  border: none;
+  color: white;
+}
+
+.textarea::placeholder {
+  color: #828282;
+  font-size: 14px;
+  position: absolute;
+  left: 12px;
+  top: 20px;
+}
+
+
+.todo-item {
+  list-style: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.button:disabled {
+  background-color: #2F80ED;
+}
+
+.off {
+  background-color: #76a3df;
+}
+
+
+
+.check-button {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.item {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.delete-button {
+  background-color: #EB5757;
+  padding: 10px;
+  border-radius: 4px;
+  width: 135px;
+  align-items: center;
+  color: white;
+  border: none;
+  font-size: 14px;
+  position: absolute;
+  right: 0%;
+}
+
+.delete-icon {
+  max-width: 12px;
+  max-height: 12px;
+}
+
+.delete-item-button {
+  color: #BDBDBD;
+}
+
+.leading {
+  display: flex;
+  align-items: center;
+}
+
+
+.hide {
+  visibility: collapse;
+}
